@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Joke Generator</title>
+    <link rel="stylesheet" href="joke-styles.css">
+</head>
+<body>
+    <div class="joke-container">
+        <header class="joke-header">
+            <h1>🎭 Random Joke Generator</h1>
+            <p class="subtitle">Get a laugh with jokes from an external API</p>
+        </header>
+
+        <div class="joke-card">
+            <div class="joke-content">
+                <div id="joke-display" class="joke-text">
+                    <p>Click the button below to get a random joke!</p>
+                </div>
+                <div id="joke-type" class="joke-type"></div>
+            </div>
+
+            <div class="button-group">
+                <button id="get-joke-btn" class="btn btn-primary">Get Joke</button>
+                <button id="copy-joke-btn" class="btn btn-secondary">Copy</button>
+                <button id="share-joke-btn" class="btn btn-secondary">Share</button>
+            </div>
+
+            <div id="loading" class="loading hidden">
+                <span class="spinner"></span>
+                <p>Loading joke...</p>
+            </div>
+        </div>
+
+        <div class="joke-history">
+            <h2>Recent Jokes</h2>
+            <ul id="history-list" class="history-list">
+                <li class="placeholder">No jokes yet. Click "Get Joke" to start!</li>
+            </ul>
+            <button id="clear-history-btn" class="btn btn-secondary btn-small">Clear History</button>
+        </div>
+
+        <footer class="joke-footer">
+            <p>Powered by <a href="https://official-joke-api.appspot.com/" target="_blank">Official Joke API</a></p>
+            <p class="disclaimer">Jokes are fetched from an external API</p>
+        </footer>
+    </div>
+
+    <script src="joke-script.js"></script>
+</body>
+</html>
