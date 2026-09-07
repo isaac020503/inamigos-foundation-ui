@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Time Zone Clock</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Global Time Zone Clock</h1>
+            <p class="subtitle">Monitor current time across multiple regions</p>
+        </header>
+
+        <div class="clock-grid">
+            <!-- UTC / London -->
+            <div class="clock-card">
+                <div class="timezone-header">
+                    <h2>London</h2>
+                    <span class="timezone-code">UTC/GMT</span>
+                </div>
+                <div class="digital-clock" id="clock-london">
+                    <span class="time">00:00:00</span>
+                    <span class="period">AM</span>
+                </div>
+                <div class="date" id="date-london">Monday, January 1, 2024</div>
+            </div>
+
+            <!-- New York -->
+            <div class="clock-card">
+                <div class="timezone-header">
+                    <h2>New York</h2>
+                    <span class="timezone-code">EST/EDT</span>
+                </div>
+                <div class="digital-clock" id="clock-newyork">
+                    <span class="time">00:00:00</span>
+                    <span class="period">AM</span>
+                </div>
+                <div class="date" id="date-newyork">Monday, January 1, 2024</div>
+            </div>
+
+            <!-- Tokyo -->
+            <div class="clock-card">
+                <div class="timezone-header">
+                    <h2>Tokyo</h2>
+                    <span class="timezone-code">JST</span>
+                </div>
+                <div class="digital-clock" id="clock-tokyo">
+                    <span class="time">00:00:00</span>
+                    <span class="period">AM</span>
+                </div>
+                <div class="date" id="date-tokyo">Monday, January 1, 2024</div>
+            </div>
+
+            <!-- Sydney -->
+            <div class="clock-card">
+                <div class="timezone-header">
+                    <h2>Sydney</h2>
+                    <span class="timezone-code">AEDT/AEST</span>
+                </div>
+                <div class="digital-clock" id="clock-sydney">
+                    <span class="time">00:00:00</span>
+                    <span class="period">AM</span>
+                </div>
+                <div class="date" id="date-sydney">Monday, January 1, 2024</div>
+            </div>
+
+            <!-- Dubai -->
+            <div class="clock-card">
+                <div class="timezone-header">
+                    <h2>Dubai</h2>
+                    <span class="timezone-code">GST</span>
+                </div>
+                <div class="digital-clock" id="clock-dubai">
+                    <span class="time">00:00:00</span>
+                    <span class="period">AM</span>
+                </div>
+                <div class="date" id="date-dubai">Monday, January 1, 2024</div>
+            </div>
+
+            <!-- São Paulo -->
+            <div class="clock-card">
+                <div class="timezone-header">
+                    <h2>São Paulo</h2>
+                    <span class="timezone-code">BRT/BRST</span>
+                </div>
+                <div class="digital-clock" id="clock-saopaulo">
+                    <span class="time">00:00:00</span>
+                    <span class="period">AM</span>
+                </div>
+                <div class="date" id="date-saopaulo">Monday, January 1, 2024</div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>All times update automatically every second</p>
+            <p class="disclaimer">Times are displayed in 12-hour format</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
